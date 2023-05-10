@@ -1,0 +1,158 @@
+* {
+    --main-color: rgb(255, 0, 64);
+}
+
+
+body {
+    display: flex;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.body-content {
+    display: flex;
+    width: 100%;
+}
+.side-bar {
+    background-color: rgb(56, 68, 64);
+    height: 100vh;
+}
+.left-bar {
+    display: flex;
+    flex-direction: column;
+}
+.block-content-zakazi {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+
+    padding: 2em 2em 0 2em;
+}
+.block-content-zakazi::-webkit-scrollbar { width: 0 !important }
+.block-zakazi div {
+    grid-gap: 10px;
+}
+.block-zakazi div:nth-child(3n) {
+    margin-bottom: 1em;
+}
+.product {
+    background: red;
+}
+.manager {
+    background: green;
+}
+.client {
+    background: yellow;
+}
+
+
+
+
+/* LEFT BAR */
+.left-bar {
+    padding: 3em 2em;
+    grid-gap: 3em;
+    width: 400px;
+    border-left: 1px solid #000;
+}
+.form-new-client {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    grid-gap: 10px;
+}
+.form-new-client button, .form-new-client button:hover, 
+.form-new-client button:focus, .form-new-client button:active,
+.form-new-client button:active:focus {
+    width: fit-content;
+    background-color: var(--main-color);
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.form-new-client input, .form-new-client input:active,
+.form-new-client:focus, .form-new-client input:hover  {
+    height: 40px;
+    outline: 0;
+    border: 0.3px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 0.3em;
+    padding-left: .7em;
+}
+.form-new-client input:active,
+.form-new-client:focus, .form-new-client input:hover {
+    border: 0.7px solid rgb(168, 168, 168);
+}
+
+
+
+
+
+
+
+
+
+.side-bar a:first-child img {
+    margin-top: 1em;
+}
+.side-bar ul {
+    grid-gap: 10px;
+}
+.nav-link {
+    display: flex;
+    grid-gap: 15px;
+}
+.nav-item a h5 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.nav-pills li a {
+    color: white;
+    font-weight: 900;
+    font-size: 1.73em;
+}
+.nav-link {
+    padding: 1em 1.5em 0.5em 1em;
+}
+.nav-item {
+    transition: .5s;
+    border-radius: 7.5px;
+}
+.nav-item.active, .nav-item.active:hover {
+    background-color: var(--main-color);
+}
+.nav-item:hover {
+    transition: .5s;
+    background-color: rgba(255, 255, 255, 0.057);
+}
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+    color: white;
+}
+.nav-link h5:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.user-tools {
+display: flex;
+justify-content: space-between;
+}
+#header {
+background-color: rgb(33, 38, 41);
+}
